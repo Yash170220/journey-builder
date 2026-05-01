@@ -8,25 +8,15 @@ sources.
 ## Run it locally
 
 ```bash
-git clone https://github.com/mosaic-avantos/frontendchallengeserver
-cd frontendchallengeserver && npm install && npm start
-# server starts on :3000
 
-# in this repo:
-npm install
-echo "VITE_API_URL=http://localhost:3000" > .env
+git clone 
+npm install 
+npm test
+npm run build
 npm run dev
-# app at :5173
+
 ```
 
-If the backend isn't running the app falls back to a static fixture
-(`src/services/fixtureGraph.ts`) so the UI is always demoable. To force
-the fixture even with a backend running, set `VITE_USE_FIXTURE=true`.
-
-```bash
-npm test           # run tests
-npm run build      # type-check + production build
-```
 
 ## What's in here
 
